@@ -1,0 +1,11 @@
+﻿<h1>Claims</h1>
+
+@foreach (var claim in User.Claims.ToList())
+{
+    
+    <p>
+        <strong>@claim.Type</strong>
+        <br/>
+        @claim.Value
+    </p>
+}
